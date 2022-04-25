@@ -17,7 +17,7 @@ class Battlefield:
     def battle(self):
         while len(self.fleet.robot) > 0 and len(self.herd.dino) > 0:
             if self.fleet.robot[0].health > 0 or self.herd.dino[0].health > 0:
-                self.robo_turn()  # First turn team
+                self.robo_turn()
             if self.herd.dino[0].health <= 0:
                 print(f'{self.herd.dino[0].name} is eliminated.')
                 self.herd.dino.remove(self.herd.dino[0])
